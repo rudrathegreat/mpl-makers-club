@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
+    <link rel="stylesheet" type="text/css" href="CSS/data.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <title>Monitoring Data</title>
+</head>
+<body>
+        <header>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <div class="hamburger">
+            <div class="bar"></div>
+        </div>
+        <img src="Images/Logo.jpg">
+        <nav class="nav-desktop">
+            <ul id="nav-links">
+
+                    <li class="navoption"><a href="index.html" class="navelement">Home</a></li>
+                    <li class="navoption"><a href="AboutUs.html" class="navelement">About</a>
+                    </li>
+                    <li class="navoption menu"><a href="javascript:void(1);" class="navelement">Projects <i class="fas fa-sort-down"></i></a>
+                        <ul class="long-menu">
+                            <li><a href="WQCS.html" class="dropdown" style="width:20vw;">Water Quality Checking System</a></li>
+                            <li><a href="RUMS.html" class="dropdown" style="width:20vw;">Rainwater Usage Monitoring System</a></li>
+                            <li><a href="HKWTS.html" class="dropdown" style="width:20vw;">Robot Walking School Bus</a></li>
+                            <li><a href="TKP.html" class="dropdown" style="width:20vw;">The Kangaroo Project</a></li>
+                        </ul>
+                    </li>
+                     <li class="navoption menu" id="monitoringData"><a href="" class="navelement">Data</a>
+                        <ul>
+                            <li><a href="javascript:void(1);" class="submenu dropdown" style="width:10vw;">Temperature <i class="fas fa-sort-down"></i></a>
+                                <ul>
+                                    <li><a href="/data/last24HoursTemperature/" target="_blank">Last 24 Hours</a></li>
+                                    <li><a href="/data/lastYearTemperature/" target="_blank">Last Year</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:void(1);" class="submenu dropdown" style="width:10vw;">Conductivity <i class="fas fa-sort-down"></i></a>
+                                <ul>
+                                    <li><a href="/data/last24HoursConductivity/" target="_blank">Last 24 Hours</a></li>
+                                    <li><a href="/data/lastYearConductivity/" target="_blank">Last Year</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:void(1);" class="submenu-2 dropdown" style="width:10vw;">pH <i class="fas fa-sort-down"></i></a>
+                                <ul>
+                                    <li><a href="/data/last24HourspH/" target="_blank">Last 24 Hours</a></li>
+                                    <li><a href="/data/lastYearpH/" target="_blank">Last Year</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navoption menu"><a href="javascript:void(1);" class="navelement">Contacts<i class="fas fa-sort-down"></i></a>
+                        <ul>
+                            <li><a href="posts.html" class="dropdown" style="width:10vw;">Post Feeds</a></li>
+                            <li><a href="contacts.html" class="dropdown" style="width:10vw;">Contacts</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="nav-mobile">
+            <ul class="nav-list">
+                <li class="nav-list-element"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-list-element"><a href="AboutUs.html" class="nav-link">About</a></li>
+                <li class="nav-list-element"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-list-element"><a href="data.html" class="nav-link">Data</a></li>
+                <li class="nav-list-element"><a href="contacts.html" class="nav-link">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="title" style="background-image:url(Images/background.jpg);">
+        <div class="container">
+            <h1 class="brand">Monitoring Data</h1>
+            <h2 class="subtitle">Data from the Water Quality Monitoring System</h2>
+            <a class="link-to-about" onclick="document.getElementById('links').scrollIntoView(true);">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </div>
+    <div class="links" id="links">
+        <div class="container">
+            <table class="desktop">
+                <tr>
+                    <td>
+                        <a href="/data/last24HoursTemperature/" class="btn" target="_blank">Last 24 Hours Temperature Data</a>
+                    </td>
+                    <td>
+                        <a href="/data/lastYearTemperature/" class="btn" target="_blank">Last Year Temperature Data</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="/data/last24HoursConductivity/" class="btn" target="_blank">Last 24 Hours Conductivity Data</a>
+                    </td>
+                    <td>
+                        <a href="/data/lastYearConductivity/" class="btn" target="_blank">Last Year Conductivity Data</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="/data/last24HourspH/" class="btn" target="_blank">Last 24 Hours pH Data</a>
+                    </td>
+                    <td>
+                        <a href="/data/lastYearpH/" class="btn" target="_blank">Last Year pH Data</a>
+                    </td>
+                </tr>
+            </table>
+            <table class="mobile">
+                <tr>
+                    <td>
+                        <a href="/data/last24HoursTemperature/" class="btn" target="_blank">Last 24 Hours Temperature Data</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="/data/lastYearTemperature/" class="btn" target="_blank">Last Year Temperature Data</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="/data/last24HoursConductivity/" class="btn" target="_blank">Last 24 Hours Conductivity Data</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="/data/lastYearConductivity/" class="btn" target="_blank">Last Year Conductivity Data</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="/data/last24HourspH/" class="btn" target="_blank">Last 24 Hours pH Data</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="/data/lastYearpH/" class="btn" target="_blank">Last Year pH Data</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+<div class="footer">
+        <div class="container">
+            <table class="sponsors">
+                <tr class="sponsors-row">
+                    <td class="sponsors-cell">
+                        <img src="Images/wts.png" style="">
+                    </td>
+                    <td class="sponsors-cell">
+                        <img src="Images/mu.png" style="">
+                    </td>
+                    <td class="sponsors-cell">
+                        <img src="Images/melbournew.png" style="">
+                    </td>
+                    <td class="sponsors-cell">
+                        <img src="Images/deakin.png" style="">
+                    </td>
+                    <td class="sponsors-cell">
+                        <img src="Images/RMIT.png" style="">
+                    </td>
+                    <td class="sponsors-cell">
+                        <img src="Images/yf.png" style="">
+                    </td>
+                    <td class="sponsors-cell">
+                        <img src="Images/lsc.png" style="">
+                    </td>
+                </tr>
+            </table>
+            <p class="copyright">Copyright &copy 2020. Mill Park Library Makers Club. All Rights Reserved.</p>
+            <table class="orgs">
+                <tr class="orgs-row">
+                    <td class="orgs-cell">
+                        <img src="Images/cow.png">
+                    </td>
+                    <td class="orgs-cell">
+                        <img src="Images/yprl.png" style="">
+                    </td>
+                    <td class="orgs-cell">
+                        <img src="Images/vsg.png" style="">
+                    </td>
+                    <td class="orgs-cell">
+                        <img src="Images/ia.png" style="">
+                    </td>
+                </tr>
+            </table>
+            <table class="social-media">
+                <tr class="social-media-row">
+                    <td class="social-media-cell">
+                        <a class="icon" href="https://github.com/rudrathegreat">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </td>
+                    <td class="social-media-cell">
+                        <a class="icon" href="https://www.youtube.com/channel/UCMD4ZUhoBXZtWoKaL3l7_9w">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </td>
+                    <td class="social-media-cell">
+                        <a class="icon" href="mailto:rudratheastronaut@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

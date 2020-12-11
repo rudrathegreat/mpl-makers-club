@@ -98,11 +98,26 @@ h1 {
 .context p,
 .aim p,
 .design p {
-    padding-top:5vh;
     line-height:1.5;
-    font-size:1.5vw;
+    font-size:1.25vw;
     font-family:'Gothic A1', sans-serif;
     font-weight:700;
+}
+
+.context p:not(:first-child),
+.aim p:not(:first-child),
+.design p:not(:first-child) {
+    padding-top:5vh;
+}
+
+.aim table,
+.design table {
+    padding-top:5vh;
+    width:100%;
+}
+
+.context p {
+    padding-top:5vh;
 }
 
 .aim,

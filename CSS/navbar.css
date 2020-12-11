@@ -199,13 +199,13 @@ header img {
     text-decoration:none;
 }
 
+.nav-desktop ul li ul li:first-child {
+    margin-top:35px;
+}
+
 .nav-desktop ul li ul li a {
     margin-top:25px;
     margin-bottom:25px;
-}
-
-.nav-desktop ul li ul li a:first-of-type {
-margin-top:60px;
 }
 
 .nav-desktop ul li .navelement {
@@ -226,7 +226,7 @@ margin-top:60px;
     animation: navmenu 300ms;
 }
 .nav-desktop ul li:hover .long-menu {
-    width:370px;
+    width:440px;
     float:left;
     padding:10px 8px;
     color:#c1c1c1;

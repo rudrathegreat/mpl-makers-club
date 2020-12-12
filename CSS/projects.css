@@ -84,15 +84,16 @@ body {
 }
 
 .projects a {
-    font-family:sans-serif;
+    font-family:'Source Sans Pro', sans-serif;
     text-decoration:none;
     color:#fff;
     border:3px solid #fff;
     margin-top:5vh;
-    padding:1vh 1vw;
+    padding:1vh 2vw;
     text-transform:uppercase;
     font-weight:700;
     transition:background-color 0.2s ease-in, color 0.2s ease-in;
+    font-size:1.25vw;
 }
 
 .projects a:hover {
@@ -139,6 +140,13 @@ body {
     font-family: 'Gothic A1', sans-serif;
     font-size:1.5vw;
     padding-top:5vh;
+}
+
+.projects .grid-cell {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
 }
 
 .footer {
@@ -286,5 +294,6 @@ body {
     .projects a {
         margin-bottom:1vh;
         margin-top:0vh;
+        font-size:2vw;
     }
 }

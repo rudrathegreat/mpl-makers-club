@@ -2,19 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
-    <link rel="stylesheet" type="text/css" href="CSS/posts.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/RUMS.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-    <title>Posts</title>
+    <title>Soil Moisture Monitoring System</title>
 </head>
 <body>
-                <header>
+        <header>
         <input type="checkbox" class="nav-toggle" id="nav-toggle">
         <div class="hamburger">
             <div class="bar"></div>
@@ -77,27 +73,121 @@
             </ul>
         </nav>
     </header>
-    <div class="hero" style="background-image:url(Images/stars.jpg);">
+    <div class="title" style="background-image:url(Images/soil.jpg);">
         <div class="container">
-            <h1 class="brand">Posts Feeds</h1>
-            <h2 class="subtitle">Any Questions? Mention Here</h2>
-            <a class="link-to-about" onclick="document.getElementById('links').scrollIntoView(true);">
+            <h1 class="brand">Soil Moisture Monitoring System</h1>
+            <h2 class="subtitle">Making sustainable living easy</h2>
+            <a class="link-to-about" onclick="document.getElementById('context').scrollIntoView(true);">
                 <i class="fas fa-chevron-down"></i>
             </a>
         </div>
     </div>
-    <div class="posts" id="posts">
-        <div class="grid">
-            <div class="grid-cell post">
-                <h1 class="title">COVID-19 Lockdown</h1>
-                <hr>
-                <h2 class="subtitle">Reflecting on the COVID Lockdown Period</h2>
-                <h3 class="date">11/12/2020</h3>
-                <a href="" class="learn-more">Learn More</a>
-            </div>
+    <div class="context" id="context">
+        <div class="container">
+            <h1>Context</h1>
+            <p>
+                Soil is right underneath us! I'ts responsible for things we take for
+                granted. Some things soil is responsible for is the produce which
+                farmers make, are a great place to store carbon, provide nutrients to
+                all the plants on Earth and the type of soil can also determine the damage
+                done to buildings on top of it during earthquakes. However if soil is not
+                managed properly, then all its benefits are decimated and this can have huge,
+                yet indirect effects on the environment. It's time to start saving soil.
+            </p>
         </div>
     </div>
-
+    <div class="aim">
+        <div class="container">
+            <h1>Aim</h1>
+            <table class="desktop">
+                <tr>
+                    <td>
+                        <p>
+                            The 'Soil Moisture Monitoring System' is designed to monitor soil
+                            quality by monitoring the amount of water in the soil. water is
+                            essential in soil as it transports nutrients to plants. Moreover,
+                            if the soil underneath a building has too much water in it, then
+                            that can lead to long-term damage to the building. In a sense,
+                            you might save thousands of dollars with the Soil Moisture Monitoring
+                            System. This system can also be used in vegetable gardens, a method to achieve
+                            sustainable living.
+                        </p>
+                    </td>
+                    <td><img src="Images/soil1.jpg"></td>
+                </tr>
+            </table>
+            <table class="mobile">
+                <tr>
+                    <td>
+                        <p>
+                            The 'Soil Moisture Monitoring System' is designed to monitor soil
+                            quality by monitoring the amount of water in the soil. water is
+                            essential in soil as it transports nutrients to plants. Moreover,
+                            if the soil underneath a building has too much water in it, then
+                            that can lead to long-term damage to the building. In a sense,
+                            you might save thousands of dollars with the Soil Moisture Monitoring
+                            System. This system can also be used in vegetable gardens, a method to achieve
+                            sustainable living.
+                        </p>
+                    </td>
+                </tr>
+                <tr><td><img src="Images/soil1.jpg"></td></tr>
+            </table>
+        </div>
+    </div>
+    <div class="design" style="margin-bottom:50vh;">
+        <div class="container">
+            <h1>Design and Implementation</h1>
+            <table class="desktop">
+                <tr>
+                    <td><img src="Images/soil2.jpg"></td>
+                    <td>
+                        <p>
+                            The Monitoring Component is a module that monitors soil moisture levels and publishes the data to the Cloud.
+                            The module consists of a Particle Electron fit with an attached soil moisture sensor.
+                            The module uses rechargeable Lithium-ion batteries and solar panels to supply its power
+                        </p>
+                        <p>
+                            The Data Storage Component is responsible for retrieving the soil moisutre data from the
+                            Particle Cloud and storing it in a database. This component consists of a
+                            Raspberry Pi, which continuously checks for any new soil mositure data on the Particle Cloud.
+                            When there is new soil moisture data on the Particle Cloud, the Raspberry Pi then gets the
+                            data via HTTP get requests and then stores them in the database.
+                        </p>
+                        <p>
+                            The Web Application is the last component in the system. When there is new
+                            soil moisture data in the database, the web application generates a new plot with the new
+                            data.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <table class="mobile">
+                <tr>
+                    <td>
+                        <p>
+                            The Monitoring Component is a module that monitors soil moisture levels and publishes the data to the Cloud.
+                            The module consists of a Particle Electron fit with an attached soil moisture sensor.
+                            The module uses rechargeable Lithium-ion batteries and solar panels to supply its power
+                        </p>
+                        <p>
+                            The Data Storage Component is responsible for retrieving the soil moisutre data from the
+                            Particle Cloud and storing it in a database. This component consists of a
+                            Raspberry Pi, which continuously checks for any new soil mositure data on the Particle Cloud.
+                            When there is new soil moisture data on the Particle Cloud, the Raspberry Pi then gets the
+                            data via HTTP get requests and then stores them in the database.
+                        </p>
+                        <p>
+                            The Web Application is the last component in the system. When there is new
+                            soil moisture data in the database, the web application generates a new plot with the new
+                            data.
+                        </p>
+                    </td>
+                </tr>
+                <tr><td><img src="Images/soil2.jpg"></td></tr>
+            </table>
+        </div>
+    </div>
 <div class="footer">
         <div class="container">
             <table class="sponsors">
